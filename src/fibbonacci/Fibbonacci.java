@@ -19,9 +19,11 @@ public class Fibbonacci {
 		int number = new Scanner(System.in).nextInt();
  
 		// printing Fibonacci series upto number
+                int total=0;
 		for (int i = 1; i <= number; i++) {
-                    System.out.print(fibonacciRecusion(i) + " ");
+                    total = total + fibonacciRecusion(i);
 		}
+                System.out.println(total);
 	}
  
 	// Method-1: Java program for Fibonacci number using recursion.
